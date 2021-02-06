@@ -1,0 +1,73 @@
+body{
+    margin: 0%;
+}
+.login{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 1000px;
+}
+.img-container{
+    background-image: url('./img/joshua-hoehne-MzuFhco8PgA-unsplash.jpg');
+    background-size: cover;
+    background-position: right;
+}
+
+.form-container{
+    padding: 128px 64px;
+}
+
+.form-title{
+    margin-top: 120px;
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 20px;
+}
+.from-group{
+    margin-bottom: 24px;
+}
+
+.form-label{
+    display: block;
+    font-family: sans-serif;
+    
+    color: rgba(0, 0, 0, 0.70);
+    font-weight: 500;
+}
+.form-input{
+    display: block;
+    width: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.40);
+    border-radius: 3px;
+    line-height: 25px;
+}
+.forgot-link{
+    display: block;
+    margin-bottom: 40px;
+    text-decoration: none;
+    color:  #0081A8;
+    font-family: sans-serif;
+}
+
+.form-sumbit-buttton{
+    width: 80%;
+    background-color: #F57C00;
+    color: white;
+    border: 1px solid black;
+    border-radius: 3px;
+    line-height: 25px;
+}
+
+@media (max-width: 768px){
+    .login{
+        grid-template-columns: 1fr ;
+    }
+    .img-container{
+        display: none;
+    }
+    .form-input{
+        width: 100%;
+    }
+    .form-sumbit-buttton{
+        width: 100%;
+    }
+}
